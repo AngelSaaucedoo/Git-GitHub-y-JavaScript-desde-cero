@@ -11,28 +11,44 @@
         <div class="hs1">
             <h1>Formulario</h1>
         </div>
+         <!-- 🟦 CONTENEDOR PADRE -->
+    <div class="contenedor-flex">
+
         <div class="form-container">               
-                <div class="caja">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+            <div class="caja">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
 
-                <div class="caja">
-                    <label for="genero">Genero:</label>
-                    <input type="text" id="genero" name="genero" required>
-                </div>
+            <div class="caja">
+                <label for="genero">Genero:</label>
+                <input type="text" id="genero" name="genero" required>
+            </div>
 
-                <div class="caja">
-                    <label for="age">Edad:</label>
-                    <input type="text" id="age" name="age" required>
-                </div>
+            <div class="caja">
+                <label for="age">Edad:</label>
+                <input type="text" id="age" name="age" required>
+            </div>
 
-                <button type="button" id="btnEvaluar">Evaluar</button>
-                <script src="formulario.js" ></script>
-                
-                <textarea id="result" name="result" rows="4" cols="50" readonly></textarea>
-
+            <button type="button" id="btnEvaluar">Evaluar</button>
+            <script src="formulario.js" ></script>
+            
+            <textarea id="result" name="result" rows="4" cols="50" readonly></textarea>
         </div>  
+        
+
+        <div class="form-container">               
+            <div class="caja">
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero" required>
+            </div>
+
+            <button type="button" id="btnCalcular">Calcular</button>
+            <script src="calcular.js" ></script>
+            
+            <textarea id="resultado" name="resultado" rows="4" cols="50" readonly></textarea>
+        </div>
+    
 
             
     </body>

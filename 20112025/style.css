@@ -1,76 +1,91 @@
+/* Estilo general del cuerpo */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #04d3d323;
+    font-family: Arial, sans-serif;   /* Fuente del texto */
+    margin: 20px;                     /* Márgenes alrededor del contenido */
+    background-color: #04d3d323;      /* Color de fondo semitransparente */
 }
 
+/* Contenedor principal que agrupa los dos formularios */
+.contenedor-flex {
+    display: flex;                    /* Activa flexbox */
+    justify-content: center;          /* Centra horizontalmente los formularios */
+    gap: 40px;                        /* Espacio entre los formularios */
+    margin-top: 20px;                 /* Margen superior */
+}
+
+/* Estilo del contenedor del título */
 .hs1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #ffffff;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;    
+    display: flex;                    /* Activa flexbox */
+    flex-direction: column;           /* Acomoda los elementos en columna */
+    justify-content: center;          /* Centra verticalmente */
+    align-items: center;              /* Centra horizontalmente */
+    background: #ffffff;              /* Fondo blanco */
+    border-radius: 5px;               /* Bordes redondeados */
+    padding: 10px;                    /* Espaciado interno */
+    margin-bottom: 10px;              /* Margen inferior */
+    box-shadow: 0 0 8px #00000030;    /* Sombra ligera */
 }
 
+/* Contenedor del formulario */
 .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    gap: 5px;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    
+    display: flex;                    /* Activa flexbox */
+    flex-direction: column;           /* Los elementos se apilan en columna */
+    justify-content: center;          /* Centra los elementos del formulario */
+    gap: 5px;                         /* Espacio vertical entre elementos */
+    background: #ffffff;              /* Fondo blanco */
+    padding: 20px;                    /* Espaciado interno */
+    border-radius: 5px;               /* Bordes redondeados */
+    box-shadow: 0 0 8px #00000030;    /* Sombra suave */
 }
 
+/* Caja de cada fila (label + input) */
 .caja{
-    display: 1;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-   
-    background: #0077ffa8;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 5px;
+    display: flex;                  /* Activa flexbox */
+    flex-direction: row;              /* Acomoda label e input en fila */
+    justify-content: center;          /* Centra contenido horizontalmente */
+    align-items: center;              /* Centra contenido verticalmente */
+    background: #0077ffa8;            /* Fondo azul semitransparente */
+    padding: 10px;                    /* Espaciado interno */
+    border-radius: 5px;               /* Bordes redondeados */
+    margin-top: 5px;                  /* Separación entre cajas */
 }
 
+/* Inputs dentro del formulario */
 .form-container input{
-    flex: 1;
-    width: auto;
+    flex: 1;                          /* El input crece para ocupar el espacio restante */
+    width: auto;                      /* Permite que el ancho lo determine flexbox */
 }
 
+/* Labels dentro del formulario */
 .form-container label{
-    flex-basis: 150px;
-   
+    flex-basis: 150px;                /* Ancho base del label */
 }
 
+/* Estilo del botón */
 button {
-    background-color: #4CAF50;
-    color: rgb(255,255, 255);
-    padding: 10px 25px;  
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 5px;
+    background-color: #4CAF50;        /* Fondo verde */
+    color: rgb(255,255, 255);         /* Texto blanco */
+    padding: 10px 25px;               /* Espaciado interno del botón */
+    border-radius: 5px;               /* Bordes redondeados */
+    cursor: pointer;                  /* Cursor tipo "mano" */
+    margin-top: 5px;                  /* Separación superior */
 }
 
+/* Estilo general de todos los inputs */
 input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 200px;
+    padding: 8px;                     /* Espaciado interno */
+    border: 1px solid #ccc;           /* Borde gris claro */
+    border-radius: 5px;               /* Bordes redondeados */
+    width: 200px;                     /* Ancho inicial */
 }
 
+/* Estilo del textarea */
 textarea {
-    flex: 1;
-    width: auto;
-    height: auto;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px;
+    flex: 1;                          /* Permite crecer dentro del contenedor */
+    width: auto;                      /* Ajusta el ancho automáticamente */
+    height: auto;                     /* Alto dinámico */
+    padding: 8px;                     /* Espaciado interno */
+    border: 1px solid #ccc;           /* Borde gris claro */
+    border-radius: 5px;               /* Bordes redondeados */
+    margin-top: 5px;                  /* Separación superior */
 }
