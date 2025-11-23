@@ -23,7 +23,7 @@ body {
     box-shadow: 0 0 8px #00000030;
 }
 
-.form-container {
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,12 +45,12 @@ body {
     margin-top: 5px;
 }
 
-.form-container input{
+.card input{
     flex: 1;
     width: auto;
 }
 
-.form-container label{
+.card label{
     flex-basis: 150px;
 }
 
