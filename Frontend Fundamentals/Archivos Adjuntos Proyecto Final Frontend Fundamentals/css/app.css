@@ -130,13 +130,13 @@ main {
     padding: 20px 40px;
 }
 
-section {
+main section {
     display: flex;
     justify-content: center;
     align-items: stretch;
 }
 
-section article {
+main section article {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -149,6 +149,11 @@ main section article div.card_img {
     width: 100%;
     height: 100%;
 }
+main section article div img {
+    width: 100%;
+    height: auto;
+}
+
 
 main section article div.card_info {
 
